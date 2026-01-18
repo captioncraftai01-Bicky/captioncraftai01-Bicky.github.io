@@ -1,41 +1,23 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Caption Craft AI</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="input-area">
 
-<div class="app">
+  <!-- PLUS ICON -->
+  <label class="plus-btn">
+    +
+    <input type="file" id="mediaInput" accept="image/*,video/*" hidden>
+  </label>
 
-  <header>
-<div class="menu">
-  ⋮
-  <div class="dropdown">
-    <p>👤 Profile</p>
-    <p>⚙️ Settings</p>
-    <p>🌙 Dark Mode</p>
-    <p>🚪 Logout</p>
-  </div>
+  <!-- TEXT INPUT -->
+  <input 
+    type="text" 
+    id="userInput" 
+    placeholder="Ask me to generate captions, hashtags..."
+  >
+
+  <!-- SEND BUTTON -->
+  <button onclick="sendMessage()">➤</button>
+
 </div>
-    <h1>Caption Craft AI</h1>
-    <p>Create viral captions, hashtags, and content ideas in seconds using AI</p>
-  </header>
-
-  <div class="cards">
-    <div class="card">📸 Instagram Reel Caption</div>
-    <div class="card">🎥 YouTube Shorts Caption</div>
-    <div class="card">🔥 Trending Hashtags</div>
-    <div class="card">💪 Motivational Quote</div>
-  </div>
-
-  <div id="chatBox" class="chat-box"></div>
-
-  <input type="file" id="mediaInput" accept="image/*,video/*">
   
   <div class="input-area">
 <div class="upload-area">
