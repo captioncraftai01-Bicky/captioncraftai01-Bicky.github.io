@@ -9,6 +9,36 @@ function sendMessage() {
 
   if (!input.value.trim()) return;
 
+  // START LOADING
+  btn.classList.add("loading");
+  btn.disabled = true;
+
+  chat.innerHTML += `<p><b>You:</b> ${input.value}</p>`;
+  chat.innerHTML += `<p><i>CaptionCraft AI is thinking...</i></p>`;
+
+  input.value = "";
+
+  setTimeout(() => {
+    chat.innerHTML += `
+<b>Generated Captions:</b><br>
+✨ Turning visuals into viral stories<br>
+🔥 Scroll-stopping content<br>
+🚀 Powered by AI creativity<br><br>
+
+<b>Hashtags:</b><br>
+#CaptionCraftAI #ViralContent #ReelsIndia #AItools
+<hr>
+`;
+
+    // STOP LOADING
+    btn.classList.remove("loading");
+    btn.disabled = false;
+
+  }, 1800);
+}
+
+  if (!input.value.trim()) return;
+
   btn.classList.add("sending");
 
   chat.innerHTML += `<p><b>You:</b> ${input.value}</p>`;
