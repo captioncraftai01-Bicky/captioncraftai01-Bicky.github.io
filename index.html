@@ -1,47 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caption Craft AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="input-area">
+  <!-- MAIN -->
+  <div class="container">
 
-  <!-- PLUS ICON -->
-  <label class="plus-btn">
-    +
-    <input type="file" id="mediaInput" accept="image/*,video/*" hidden>
-  </label>
+    <!-- LOGO -->
+    <div class="logo-box">
+      <div class="logo">✨</div>
+      <h1>Caption Craft <span>AI</span></h1>
+      <p>Create viral captions, hashtags, and content ideas in seconds using AI</p>
+    </div>
 
-  <!-- TEXT INPUT -->
-  <input 
-    type="text" 
-    id="userInput" 
-    placeholder="Ask me to generate captions, hashtags..."
-  >
+    <!-- CARDS -->
+    <div class="cards">
 
-  <!-- SEND BUTTON -->
-  <button onclick="sendMessage()">➤</button>
+      <div class="card">
+        📸
+        <h3>Instagram Reel Caption</h3>
+        <p>Write 3 viral captions for Instagram Reels.</p>
+      </div>
 
-</div>
-  
-  <div class="input-area">
-<div class="upload-area">
-  <label>
-    📷
-    <input type="file" accept="image/*" hidden>
-  </label>
+      <div class="card">
+        🎥
+        <h3>YouTube Shorts Caption</h3>
+        <p>Create catchy titles & descriptions.</p>
+      </div>
 
-  <label>
-    🎥
-    <input type="file" accept="video/*" hidden>
-  </label>
+      <div class="card">
+        #
+        <h3>Trending Hashtags</h3>
+        <p>Generate high-reach hashtags.</p>
+      </div>
 
-  <label>
-    📄
-    <input type="file" accept=".pdf,.doc,.txt" hidden>
-  </label>
-</div>
-    <input type="text" id="userInput" placeholder="Ask me to generate captions, hashtags, reels ideas...">
-    <button onclick="sendMessage()">➤</button>
+      <div class="card">
+        💪
+        <h3>Motivational Quote</h3>
+        <p>Powerful AI-generated quotes.</p>
+      </div>
+
+    </div>
+
   </div>
 
-</div>
+  <!-- CHAT INPUT -->
+  <div class="chat-bar">
 
-<script src="script.js"></script>
+    <label class="plus-btn">
+      +
+      <input type="file" hidden>
+    </label>
+
+    <input type="text" placeholder="Message CaptionCraft AI...">
+
+    <button>➤</button>
+  </div>
+
 </body>
 </html>
