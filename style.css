@@ -114,3 +114,30 @@ button.sending {
   50% { opacity: 1 }
   100% { opacity: .2 }
 }
+#sendBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #7c5cff;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* ROTATING LOADER */
+#sendBtn.loading #arrow {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
